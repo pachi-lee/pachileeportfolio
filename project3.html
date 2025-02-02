@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pachi Lee's Portfolio</title>
+
+    <link rel="stylesheet" href="stylemyprojects.css">
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="icon" href="Pachi.JPG">
+
+</head>
+<body>
+   <!--navigation bar and sidebar-->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">PL</a>
+                        </div>
+            
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li onclick= "showContent();removeContent()""><a href="index.html">Welcome</a></li>
+            <li onclick=showContent();removeContent()><a href="#aboutme">About Me</a></li>
+            <li onclick=showContent();removeContent()><a href="#projects">Projects</a></li>
+            <li onclick=showContent();removeContent()><a href="#resume">Resume</a></li>
+            <li onclick=showContent();removeContent()><a href="#contact">Contact Me</a></li>
+
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </div>
+        <div class="navdiv">
+            <ul>
+                <li class="hideOnMobile" onclick="showContent();removeContent()"><a href="index.html">Welcome</a></li>
+                <li class="hideOnMobile" onclick="showContent();removeContent()"><a href="#aboutme">About Me</a></li>
+                <li class="hideOnMobile" onclick="showContent();removeContent()"><a href="#projects">Projects</a></li>
+                <li class="hideOnMobile" onclick="showContent();removeContent()"><a href="#resume">Resume</a></li>
+                <li class="hideOnMobile" onclick="showContent();removeContent()"><a href="#contact">Contact Me</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M160-360v-80h640v80H160Zm0-160v-80h640v80H160Z"/></svg></a></li>
+            
+               
+            </ul>
+        </div>
+    </nav>
+    <div class="myprojects">
+        <section>
+            <h1>Health Research</h1>
+        
+            <div class="part">
+                <img id="image" src="KAB.png" height="300px" width="300px" >
+            
+                <h5>Technical Skills learned:</h5>
+                
+                <ul>
+                    <li>R-studio</li>
+                    <li>Fischer exact test</li>
+                       <li> Multivariable logistic regression Test </li>
+                </ul>
+            </div>
+               
+            <div>
+        <p> The goal of this project was to collect data in the community about the knowledge gap of tick vector borne disease in the Hmong community. My part as a research assistant was to collect, analyze primary research data, conduct over 300 survey interviews, and document results according to established policies and procedures.
+            <br><br>I provided technical expertise to fundamental and applied scientific research under the direction of senior research personnel Xia Lee.
+           <br><br> We used R-Studio to create analytical data, define variables, use methods like fisher exact test, and multivariable logistic regression to compare variables, and organized and cleaned missing data.
+            </p> 
+        </div>
+            <div class="part">
+            <a href="HmongKAB_VW_Final (2).pdf" download class="btn btn--download">Download Public Health PDF<span class="u-bolder"></span></a>
+        </div>
+            </section>
+        </div>
+  <!--welcome-->
+  <div class="main">
+  <div class="welcomepage">
+  <section class="hidden" id="welcome">
+        <div class="welcomepage">
+        <h2 class = "welcometext">Hi, I'm Pachi. Welcome to my professional portfolio. </h2>
+      <br>
+      <p class="text">I'm an aspiring software engineer. I like to work with data and create websites.</p>
+        <div class="icon-container">
+    
+        <a href="https://github.com/pachi-lee" target=_blank title="this takes you to my GitHub"><i class="fa-brands fa-github"></i></a>
+
+    </div>
+    </section>
+    </div>
+     
+    <!--About me Section-->
+    <section class="hidden" id="aboutme">
+        <div class="about">
+         <div class="aboutMe">
+             <img  id="headShot" src="Pachi.JPG" height="300" width="200">
+         </div>
+         <div class="aboutMe">
+         <h1 class="title">About Me</h1>
+     
+         <p>Hello, I'm Pachi lee. I was born and raised in Sheboygan Wi. I'm a student, majoring in computer science at the University of Wisconsin – Milwaukee, aspiring to become a software engineer. I also have a Bachelor's degree in Biology from the University of Wisconsin - Madison. I have strong passion for life science and creating innovations.
+                     
+             <br><br>Previously, I worked on a project with the Midwest Center of Excellence for Vector Borne Disease at the University of Wisconsin - Madison to bring awareness of tick vector borne disease in the Hmong Community in Wisconsin.  My role as a research assistant was to interview participants, collect data, analyze data, create infographics using R-Studio, and disseminate outreach materials. Overall, that experience lead me to gain a passion for analyzing and coding data, which is why I decided to go back to school to earn a Computer Science degree.
+         
+             </br/><br> Currently, I am gaining new skills to land an internship position. </p>     
+         </div>    
+     </div>
+         </section>
+<!--Projects-->
+
+<section class="hidden" id="projects">
+
+<h1 class="projectTitle">Projects</h1>
+<div class="grid">
+<div class="box">
+<div class="title">
+    <h2><a href="Project1.html">Portfolio Website</a></h2>
+    <h3>Jan 2024</h3> 
+</div>
+<br>
+<div class="content"><img id="image" src="web.png" height="300px" width="300px">
+    <h4>Technical Skills</h4>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul></div>
+
+</div>
+<!--<div class="box" id="content" >
+<p>My first portfolio website built with Visual Code Studio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores amet enim fugiat. Quas quaerat consequatur id omnis suscipit repellat minima nemo, neque, placeat itaque ratione quo harum doloremque labore perspiciatis!</h4>  
+</div>-->    
+
+<div class="box">
+<div class="title">
+    <h2><a href="project2.html">Java Program</a></h2>
+    <h3>November 2024</h3>
+</div>
+<br>
+<div class="content">
+<img id="image" src="java.png" height="300px" width="300px" >
+<h5>Technical Skills learned:</h5>
+
+<ul>
+    <li>Java </li>
+    <li>Binary Search Algorithm </li>
+</ul>
+</div>
+
+</div>
+<!--<div class="box" id="content">
+<p>Add word to list of array. Use algorithm to find repeated word added to array and to delete a word</p>    
+<br>
+</div>
+-->
+
+<div class="box">
+<div class="title">
+<h2><a href="project3.html">Health Research</a></h2>
+<h3>Janurary 2022 - April 2023</h3>
+</div>
+<br>
+<div class="content">
+<img id="image" src="KAB.png" height="300px" width="300px" onclick=showContent() >
+<h5>Technical Skills learned:</h5>
+
+<ul>
+    <li>R-studio</li>
+    <li>Fischer exact test</li>
+       <li> Multivariable logistic regression Test </li>
+</ul>
+</div>
+</div>
+</div>
+    <!--
+<div class="box" id="content">
+
+
+<p>           A public health research to inquire data about tick vector borne disease in the Hmong Community of Wisconsin
+</p>
+    <p>Worked on research project with Midwest Center of Excellence for Vector-Borne Disease to understand the knowledge gap of Hmong community regarding tick-vector borne disease and ticks and create outreach materials for community. Collected and analyzed primary research data, conduct over 300 survey interviews, and document results according to established policies and procedures.</p>
+    <br><p>Provided technical expertise to fundamental and applied scientific research under the direction of senior research personnel or faculty.
+    </p><br><p>Used R-Studio to create analytical data, defining variables, methods like fisher exact test, and multivariable logistic regression to compare variables. Organized and cleaned missing data.
+    </p> -->
+</section>
+
+<!--contact-->
+<div class="resume">
+    <section class="hidden" id="resume">
+        <a href="Pachi Lee Resume.pdf" download class="btn btn--download">Download Resume<span class="u-bolder"></span></a>
+    </section>
+
+<div>
+
+</section>
+
+<section class="hidden" id="contact">
+  <form action="https://formspree.io/f/xkggdqae" method="POST">
+    <h1>Contact Form</h1>
+    <input type="text" placeholder="First Name" autocomplete="off" required>
+    <input type="text" placeholder="Last Name" autocomplete="off" required>
+    <input type="email" placeholder="Email Address" autocomplete="off" required>
+<textarea rows="5" cols="60" name="message" placeholder="Enter text" autocomplete="off" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
+</div>
+</div>
+</div>
+</body>
+</html>

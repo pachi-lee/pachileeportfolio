@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body{
+
+    background-color: antiquewhite;
+    color: rgb(0, 0, 0); 
+    font-family: "Lexend", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+}
+
+section {
+    text-align: center;
+    place-content: center;
+    place-items: center;
+    align-content: center;
+ min-height: 100vh;
+ padding-left: 15%;
+ padding-right: 15%;
+}
+.main{
+    display: none;
+}
+.myprojects{
+    display: block;
+}
+h1{
+    font-size: 35px;
+    padding: 0;
+}
+h2{
+    text-decoration: none;
+}
+p{
+    font-size: 17px;
+    align-items: center;
+    place-content: center;
+    text-align: left;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p a:hover{
+    color: grey;
+    text-shadow: yellow;
+}
+  /*--navigation bar --*/
+nav .logo{
+    padding-top: 15px;
+    position: fixed; 
+    font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+
+nav{
+    background-color:rgb(97, 147, 160);   
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+    }
+nav ul {
+width: 100%;
+list-style: none;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+    }
+
+nav li{
+        height: 50px;
+        
+    }
+nav a {
+        height: 100%;
+        padding: 0 30px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: black;
+
+    }
+nav a:hover {
+        color: rgb(226, 226, 226);
+        background-color: grey;
+    }
+
+
+/* side bar */
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(250, 235, 215, 0.335);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+
+
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+.menu-button{
+    display: block;
+}
+
+
+/*body alignment*/
+
+    
+/*welcome section */
+.welcomepage{
+    background-color: rgb(97, 147, 160);    
+      
+}
+    .welcometext{
+        font-size: 50px;
+        font-style: bold;
+    }
+
+    .hidden {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-100%);
+        transition: all 1s;
+        align-items: center;
+    }
+    @media(prefers-reduced-motion){
+        .hidden {
+            transition: none;
+        }
+    }
+    .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+    
+  
+    /*Image of me */
+    
+
+/*  github and Linkedin icons*/
+.icon-container {
+    text-align: center;
+    padding: 10px;
+}
+.icon-container .fa-linkedin, 
+.icon-container .fa-github {
+   display: inline-block;
+   padding: 100 px;
+   padding-left: 30px;
+
+}
+
+.fa-linkedin{
+font-size: 50px;
+color: black;
+text-align: center;
+padding: 20px;
+}
+
+.fa-github 
+{
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#headShot{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+.about{
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+    align-content: center;
+}
+.aboutMe{
+    margin: 50px;
+}
+.about::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.aboutMe, .about, .about::after {box-sizing: border-box;
+    place-items: center;}
+/*Project Section*/
+#projects{
+    background-color: rgb(250, 244, 236);
+    text-decoration: none;
+    color: black;
+margin: auto;
+padding-top: 8%;
+
+ }
+
+
+
+.grid{
+    display: flex;
+    text-align: center;
+    align-content: center;
+}
+.box{
+    color: black;
+   background-color: white;
+    font-size: smaller;
+    text-align: center;
+    align-content: center;
+   width: 33%;
+height: 500px;
+   border-radius: 10px;
+   margin: 40px;
+ 
+}
+.box a:hover{
+    color:rgb(97, 147, 160);
+}
+
+.grid::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.box, .grid, .grid::after {box-sizing: border-box;
+    place-items: center;}
+
+.button{
+    background-color: white;
+}
+
+    /*Mobile Site*/
+@media(max-width: 800px){
+    nav{
+        background-color: transparent;
+    }
+    .hideOnMobile{
+        display: none;
+    }
+    .section{
+        border: 20px;
+        padding: auto;
+        margin: auto;
+    }
+    .Headshot{
+        padding-top: 50px;
+    }
+    .about{
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+    }
+    .projects{
+        align-content: center;
+    }
+    .title{
+        align-items: center;
+        place-items: center;
+    }
+    h1{
+        font-size: 31px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    h4{
+        font-size: 17px;
+    }
+    p{
+        font-size: 18px;
+    }
+    .title{
+        place-items: center;
+        align-items: center;
+    }
+   .content{
+    display: none;
+   }
+   .grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    padding: auto;
+    margin: auto;
+    flex-direction: column;
+}
+.box{
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    overflow:auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0;
+    height: 200px;
+    width: 200px;
+}
+
+}
+    */
+    ul {
+
+        text-decoration: none;
+}
+
+ul li{
+    margin: 10px;
+    font-size: 15px;
+    display: inline-flex;
+    text-align: justify;
+   
+
+}
+    /**/
+/*Scroll to navigation click*/
+.resume{
+    background-color: antiquewhite;
+}
+/*BTN */
+.btn{
+    background-color: white;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 0.5 px;
+    padding: 10px 20px;
+    border-radius: 5000px;
+    transition: all 0.3s;
+}
+.btn:hover{
+    transform: scale(1.15);
+    background-color: rgb(196, 185, 171);
+}
+.btn--contact {
+    animation: fade-down 0.5s 0.4s backwards;
+}
+.btn--download{
+    padding: 16px 32px;
+    font-size: 16px;
+    place-content: center;
+}
+
+/* Contact Form */
+#contact{
+    background-color: rgb(97, 147, 160);
+}
+input{
+background-color: white;
+padding: 16px 16px;
+border-radius: 10px;
+border-color: black;
+margin-bottom: 20px;
+margin-left: 15%;
+width: 70%;
+}
+textarea{
+    background-color: white;
+    padding: 16px 16px;
+    border-radius: 10px;
+    border-color: 5px solid black;
+    margin-bottom: 25px;
+    margin-left: 15%;
+    width: 70%;
+    font-family: "Lexend", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+input:focus-within {
+    outline: none;
+    border-color: lavendar; 
+    border-width: 3px;
+}
+button{
+    background-color: antiquewhite;
+    border-radius: 28px;
+    border-color: black;
+    font-size: 22px;
+    padding: 18px 18px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+button:hover{
+    background-color: rgb(199, 188, 173);
+    opacity: 80%;
+    cursor: pointer;
+}
+html{
+    scroll-behavior: smooth;
+}

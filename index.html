@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="icon" href="Pachi.JPG">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pachi Lee's Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+   <!--navigation bar and sidebar-->
+    <nav class="navbar">
+
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li ><a href="#welcome">Welcome</a></li>
+            <li ><a href="#aboutme">About Me</a></li>
+            <li ><a href="#projects">Projects</a></li>
+            <li ><a href="#resume">Resume</a></li>
+            <li ><a href="#contact">Contact Me</a></li>
+
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </div>
+        <div class="navdiv">
+            <div class="logo">
+<a href="index.html">PL</a>
+            </div>
+
+            <ul>
+                <li class="hideOnMobile"><a href="#welcome">Welcome</a></li>
+                <li class="hideOnMobile"><a href="#aboutme">About Me</a></li>
+                <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+                <li class="hideOnMobile"><a href="#resume">Resume</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact Me</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M160-360v-80h640v80H160Zm0-160v-80h640v80H160Z"/></svg></a></li>
+            
+               
+            </ul>
+        </div>
+    </nav>
+           <!--welcome-->
+
+           <div class="welcomepage" id="welcome">
+            <section class="hidden">
+
+                <h2 class = "welcometext">Hi, I'm Pachi. Welcome to my professional portfolio. </h2>
+              <br>
+              <p class="text">I'm an aspiring software engineer. I like to work with data and create websites.</p>
+                <div class="icon-container">
+                <a href="https://www.linkedin.com/in/pachi-lee/" target=_blank title = "this takes you to my LinkedIn page"> <i class="fa-brands fa-linkedin"></i></a>
+            
+                <a href="https://github.com/pachi-lee" target=_blank title="this takes you to my GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+              
+              
+            </section>
+        </div>
+             
+            <!--About me Section-->
+
+<section class="hidden" id="aboutme">
+   <div class="about">
+    <div class="aboutMe">
+        <img  id="headShot" src="Pachi.JPG" height="300" width="200">
+    </div>
+    <div class="aboutMe">
+    <h1 class="title">About Me</h1>
+
+    <p>Hello, I'm Pachi lee. I was born and raised in Sheboygan Wi. I'm a student, majoring in computer science at the University of Wisconsin – Milwaukee, aspiring to become a software engineer. I also have a Bachelor's degree in Biology from the University of Wisconsin - Madison. I have strong passion for life science and creating innovations.
+                
+        <br><br>Previously, I worked on a project with the Midwest Center of Excellence for Vector Borne Disease at the University of Wisconsin - Madison to bring awareness of tick vector borne disease in the Hmong Community in Wisconsin.  My role as a research assistant was to interview participants, collect data, analyze data, create infographics using R-Studio, and disseminate outreach materials. Overall, that experience lead me to gain a passion for analyzing and coding data, which is why I decided to go back to school to earn a Computer Science degree.
+    
+        </br/><br> Currently, I am gaining new skills to land an internship position. </p>     
+    </div>    
+</div>
+    </section>
+     
+
+
+<!--Projects-->
+<div class="projects">
+<section class="hidden" id="projects">
+
+        <h1 class="projectTitle">Projects</h1>
+<div class="grid">
+    <div class="box">
+        <div class="title">
+            <h2><a href="Project1.html">Portfolio Website</a></h2>
+            <h3>Jan 2024</h3> 
+        </div>
+        <br>
+        <div class="content"><img id="image" src="web.png" height="300px" width="300px">
+            <h4>Technical Skills</h4>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul></div>
+    </div>  
+    <div class="box">
+        <div class="title">
+            <h2><a href="project2.html">Java Program</a></h2>
+            <h3>November 2024</h3>
+        </div>
+      <br>
+      <div class="content">
+        <img id="image" src="java.png" height="300px" width="300px" >
+        <h5>Technical Skills learned:</h5>
+
+        <ul>
+            <li>Java </li>
+            <li>Binary Search Algorithm </li>
+        </ul>
+      </div>
+       
+</div>
+
+
+    <div class="box">
+<div class="title">
+    <h2><a href="project3.html">Health Research</a></h2>
+    <h3>Janurary 2022 - April 2023</h3>
+</div>
+<br>
+<div class="content">
+        <img id="image" src="KAB.png" height="300px" width="300px" onclick=showContent() >
+        <h5>Technical Skills learned:</h5>
+
+        <ul>
+            <li>R-studio</li>
+            <li>Fischer exact test</li>
+               <li> Multivariable logistic regression Test </li>
+        </ul>
+    </div>
+        </div>
+        </div>
+         
+    </section>
+</div>
+<!--contact-->
+<div class="resume">
+    <section class="hidden" id="resume">
+        <a href="Pachi Lee Resume.pdf" download class="btn btn--download">Download Resume<span class="u-bolder"></span></a>
+    </section>
+
+<div>
+
+<section class="hidden" id="contact">
+  <form action="https://formspree.io/f/xkggdqae" method="POST">
+    <h1>Contact Form</h1>
+    <input type="text" placeholder="First Name" autocomplete="off" required>
+    <input type="text" placeholder="Last Name" autocomplete="off" required>
+    <input type="email" placeholder="Email Address" autocomplete="off" required>
+<textarea rows="5" cols="60" name="message" placeholder="Enter text" autocomplete="off" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
+</body>
+</html>
